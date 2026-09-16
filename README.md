@@ -8,7 +8,7 @@ The live site (adhd-bornholm.dk) is currently a placeholder with no real content
 
 ## Scope
 
-- Full rebuild, styled as a subsidiary of adhd.dk, using the real ADHD-foreningen brand colors sampled from the provided logos: charcoal `#292929`, cream `#FFFCFA`, plum `#4C303F`.
+- Full rebuild, styled as a subsidiary of adhd.dk, using the real ADHD-foreningen brand colors sampled from the provided logos: charcoal `#292929`, cream `#FFFCFA`, plum `#4C303F`. Header uses the official combined lockup (`site/assets/logo-lokal-afd-bornholm.jpg`) — the earlier hand-built logo-image + text combo was replaced with this on 2026-09-16.
 - Plain static HTML/CSS — no framework, no build step — so it can be uploaded directly over FTP.
 - Content sourced from ADHD-foreningen's existing public page for the Bornholm chapter (adhd.dk/lokalafdelinger/bornholm): activities, board members, contact details. See "Content source" below.
 - Deploy target: Simply.com FTP hosting the user already has access to (see legacy-site/ note below) — user uploads manually once happy with the result; this repo does not push to FTP automatically.
