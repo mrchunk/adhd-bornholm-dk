@@ -40,7 +40,7 @@ Follows a written content brief from ADHD-foreningen for chapter sites (photogra
 
 - **Lokale tilbud pricing/signup**: marked all three activities as "Gratis" / "Ikke nødvendig — mød bare op" — this wasn't explicitly confirmed, just inferred from how these community cafés are typically run. Please confirm or correct per activity.
 - **Board bios**: the content brief also asks for a 2-4 line personal bio per board member. I don't have that yet (photos are now in place for all five) — noted as "coming soon" rather than inventing biographical text about real people.
-- **Arrangementer**: no actual upcoming one-off events were provided, so this page currently shows an empty state pointing to social media instead of fabricated dates.
+- **Arrangementer**: now has one real event (Tur til Nature Park, 2026-09-19), provided directly by the user with a poster image (`site/assets/events/2026-09-19.jpg`). Note this event is member-only, capacity-limited, and has its own signup flow (nemtilmeld.dk) separate from ADHD-foreningen's membership signup. No past-event photos yet, so "Fra tidligere arrangementer" is still an empty state.
 - **Kontakt "svartid"**: the brief asks for an approximate response time; I used a generic "we reply when we can, we're volunteers" line rather than inventing a number of days.
 - **Medlem page QR code**: generated via a third-party QR image API (api.qrserver.com) embedded as a plain `<img>` — no JS/library, but it does mean that image depends on an external service being up when the live page loads. The QR is always paired with a normal clickable link per the brief's own guidance.
 
