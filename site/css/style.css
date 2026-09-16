@@ -1,10 +1,11 @@
 :root {
-  --green: #1f7a4d;
-  --green-dark: #155c39;
-  --green-light: #e6f4ec;
-  --ink: #222222;
-  --ink-soft: #555555;
+  --plum: #4c303f;
+  --plum-dark: #3a2530;
+  --plum-light: #f4eef1;
+  --ink: #292929;
+  --ink-soft: #5a5555;
   --border: #dddddd;
+  --cream: #fffcfa;
   --max-width: 1100px;
 }
 
@@ -20,16 +21,16 @@ body {
   margin: 0;
   font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   color: var(--ink);
-  background: #ffffff;
+  background: var(--cream);
   line-height: 1.6;
 }
 
 a {
-  color: var(--green-dark);
+  color: var(--plum-dark);
 }
 
 a:hover {
-  color: var(--green);
+  color: var(--plum);
 }
 
 img {
@@ -47,7 +48,7 @@ img {
   position: absolute;
   left: -9999px;
   top: 0;
-  background: var(--green-dark);
+  background: var(--plum-dark);
   color: #fff;
   padding: 0.75rem 1rem;
   z-index: 100;
@@ -74,15 +75,27 @@ img {
 
 .logo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
   text-decoration: none;
   line-height: 1.2;
+}
+
+.logo-img {
+  height: 34px;
+  width: auto;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo .brand {
   font-size: 1.4rem;
   font-weight: 700;
-  color: var(--green-dark);
+  color: var(--plum-dark);
 }
 
 .logo .sub {
@@ -107,19 +120,19 @@ img {
 
 .main-nav a:hover,
 .main-nav a[aria-current="page"] {
-  color: var(--green-dark);
+  color: var(--plum-dark);
 }
 
 /* Hero */
 .hero {
-  background: var(--green-light);
+  background: var(--plum-light);
   padding: 3rem 0;
 }
 
 .hero h1 {
   font-size: 2.2rem;
   margin: 0 0 1rem;
-  color: var(--green-dark);
+  color: var(--plum-dark);
 }
 
 .hero p {
@@ -130,7 +143,7 @@ img {
 
 .button {
   display: inline-block;
-  background: var(--green);
+  background: var(--plum);
   color: #fff;
   text-decoration: none;
   font-weight: 700;
@@ -140,18 +153,18 @@ img {
 }
 
 .button:hover {
-  background: var(--green-dark);
+  background: var(--plum-dark);
   color: #fff;
 }
 
 .button.secondary {
   background: #fff;
-  color: var(--green-dark);
-  border: 2px solid var(--green);
+  color: var(--plum-dark);
+  border: 2px solid var(--plum);
 }
 
 .button.secondary:hover {
-  background: var(--green-light);
+  background: var(--plum-light);
 }
 
 /* Sections */
@@ -160,7 +173,7 @@ section {
 }
 
 section h2 {
-  color: var(--green-dark);
+  color: var(--plum-dark);
   font-size: 1.6rem;
   margin-bottom: 1.5rem;
 }
@@ -180,7 +193,7 @@ section h2 {
 }
 
 .card h3 {
-  color: var(--green-dark);
+  color: var(--plum-dark);
   margin-top: 0;
 }
 
@@ -198,7 +211,7 @@ section h2 {
 }
 
 .person {
-  border-left: 4px solid var(--green);
+  border-left: 4px solid var(--plum);
   padding: 0.5rem 1rem;
 }
 
@@ -215,7 +228,7 @@ section h2 {
 }
 
 .contact-block h3 {
-  color: var(--green-dark);
+  color: var(--plum-dark);
   margin-bottom: 0.5rem;
 }
 
@@ -244,7 +257,7 @@ section h2 {
 
 /* Skip-to-parent banner */
 .parent-org-banner {
-  background: var(--green-dark);
+  background: var(--plum-dark);
   color: #fff;
   font-size: 0.9rem;
   text-align: center;

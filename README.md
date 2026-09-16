@@ -8,7 +8,7 @@ The live site (adhd-bornholm.dk) is currently a placeholder with no real content
 
 ## Scope
 
-- Full rebuild, styled as a subsidiary of adhd.dk (green/white palette, similar structure).
+- Full rebuild, styled as a subsidiary of adhd.dk, using the real ADHD-foreningen brand colors sampled from the provided logos: charcoal `#292929`, cream `#FFFCFA`, plum `#4C303F`.
 - Plain static HTML/CSS — no framework, no build step — so it can be uploaded directly over FTP.
 - Content sourced from ADHD-foreningen's existing public page for the Bornholm chapter (adhd.dk/lokalafdelinger/bornholm): activities, board members, contact details. See "Content source" below.
 - Deploy target: Simply.com FTP hosting the user already has access to (see legacy-site/ note below) — user uploads manually once happy with the result; this repo does not push to FTP automatically.
@@ -21,16 +21,13 @@ Pulled from ADHD-foreningen's public Bornholm chapter page (https://adhd.dk/loka
 - **Board**: Selina Munch-Petersen (formand), Cecilie Ramstedt Frølich (næstformand), Marianne Frølich (kasserer), Sophie Bidstrup Ring, Ralf Marcoux Skovgaard
 - **Contact**: bornholm@adhd.dk, 61 45 09 02, Ølenevej 22, 3751 Østermarie
 - **Meeting location**: Østerlars Multihus, Stavsdalvej 30, 3760 Gudhjem
-- **Social**: Instagram @adhdbornholm (Facebook group mentioned on adhd.dk but no confirmed URL found — left off the site rather than guessing)
+- **Social**: Facebook group (facebook.com/groups/350894474982), Instagram @adhdbornholm
 
-This should be verified/updated with ADHD Bornholm directly before going live — it was scraped from the parent org's site, not provided first-hand.
+Contact details and content confirmed accurate by the user on 2026-09-16.
 
 ## Open decisions
 
-- [ ] Real logo/visual identity — site currently uses a text wordmark + adhd.dk-style green palette, no actual logo asset
-- [ ] Confirm/replace Facebook link (couldn't verify a real URL)
 - [ ] Who maintains the site long-term / whether a CMS is worth adding later
-- [ ] Confirm content above is accurate and current with ADHD Bornholm directly
 - [ ] Hosting target for adhd-bornholm.dk — the FTP account provided only serves Simply.com's default splash page (see legacy-site/ note); it's unclear if this FTP account is actually where the live domain's DNS points
 
 ## Findings
