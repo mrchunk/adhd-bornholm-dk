@@ -339,6 +339,12 @@ section h2 {
   color: var(--ink-soft);
 }
 
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 /* Event card */
 .event-card {
   display: grid;
