@@ -418,4 +418,47 @@ section h2 {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .logo-img {
+    height: 56px;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero {
+    padding: 2rem 0;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+
+  .button {
+    padding: 0.65rem 1.15rem;
+    font-size: 0.95rem;
+  }
+
+  .card,
+  .event-body {
+    padding: 1.1rem;
+  }
+
+  .qr-block img {
+    width: 140px;
+    height: 140px;
+  }
 }
