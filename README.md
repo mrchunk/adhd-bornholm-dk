@@ -25,6 +25,25 @@ Pulled from ADHD-foreningen's public Bornholm chapter page (https://adhd.dk/loka
 
 Contact details and content confirmed accurate by the user on 2026-09-16.
 
+## Site structure
+
+Follows a written content brief from ADHD-foreningen for chapter sites (photographed and provided by the user on 2026-09-16), which specifies this IA:
+
+- **Forside** — intro (who we are, area covered, who it's for) + buttons to Lokale tilbud / Kontakt / Bliv medlem
+- **Lokale tilbud** (`lokale-tilbud.html`, was `aktiviteter.html`) — per-group: name, audience, description, place/frequency, signup, price, status
+- **Om os** (`om-os.html`) — board members (name/role/avatar) + chapter mission/volunteering
+- **Arrangementer** (`arrangementer.html`, new) — upcoming one-off events with signup links, plus a "fra tidligere arrangementer" photo section
+- **Medlem** (`medlem.html`, new) — membership benefits, QR code + link to adhd.dk/bliv-medlem/, links to rådgivning and nyhedsbrev, explicit note that membership is administered by ADHD-foreningen, not the local chapter
+- **Kontakt** (`kontakt.html`) — email/phone/social/response time + link to the official adhd.dk chapter page
+
+## Assumptions that need verification before going live
+
+- **Lokale tilbud pricing/signup**: marked all three activities as "Gratis" / "Ikke nødvendig — mød bare op" — this wasn't explicitly confirmed, just inferred from how these community cafés are typically run. Please confirm or correct per activity.
+- **Board bios/photos**: the content brief asks for a portrait photo + 2-4 line personal bio per board member. I don't have either, so the board section currently shows initials avatars only with a "coming soon" note rather than inventing biographical text about real people.
+- **Arrangementer**: no actual upcoming one-off events were provided, so this page currently shows an empty state pointing to social media instead of fabricated dates.
+- **Kontakt "svartid"**: the brief asks for an approximate response time; I used a generic "we reply when we can, we're volunteers" line rather than inventing a number of days.
+- **Medlem page QR code**: generated via a third-party QR image API (api.qrserver.com) embedded as a plain `<img>` — no JS/library, but it does mean that image depends on an external service being up when the live page loads. The QR is always paired with a normal clickable link per the brief's own guidance.
+
 ## Open decisions
 
 - [ ] Who maintains the site long-term / whether a CMS is worth adding later
