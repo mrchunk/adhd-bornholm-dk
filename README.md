@@ -21,6 +21,10 @@ The live site is currently a placeholder ("Her kommer ADHD Bornholms hjemmeside"
 - [ ] Hosting target and deployment approach
 - [ ] Visual identity / branding (logo, colors) — does one exist already?
 
+## Findings
+
+- The FTP account (Simply.com hosting) contains only the default provider splash page in both `public_html` and `testing` — no real site files, empty `.htaccess`. This does **not** match the live placeholder page shown at adhd-bornholm.dk ("Her kommer ADHD Bornholms hjemmeside" + cookie banner), so the live content is coming from somewhere else — different DNS target, a separate site-builder/CMS, or a different hosting account. Needs clarifying with whoever manages the domain/hosting before assuming FTP is the deployment path for the rebuild.
+
 ## Notes
 
 See `AGENTS.md` for working conventions on this project.
