@@ -1,29 +1,41 @@
 # ADHD Bornholm — Website Renovation
 
-Rebuild of the website for ADHD Bornholm, a local ADHD advocacy/support organization on Bornholm, Denmark (adhd-bornholm.dk).
+Rebuild of the website for ADHD Bornholm, the local Bornholm chapter of ADHD-foreningen (the Danish national ADHD association, adhd.dk).
 
 ## Status
 
-The live site is currently a placeholder ("Her kommer ADHD Bornholms hjemmeside") with only a home link and a GDPR cookie banner — no real content. This project is a full rebuild, not a restyle.
+The live site (adhd-bornholm.dk) is currently a placeholder with no real content. `site/` contains a from-scratch static rebuild, styled to resemble the parent organization's site at adhd.dk. Deployment is manual: copy the contents of `site/` into the `public_html` folder over FTP when ready — no build step required.
 
 ## Scope
 
-- Full rebuild: information architecture, content, and design from scratch.
-- Tech stack: not yet decided.
-- Content: not yet gathered — needs input from ADHD Bornholm (who they are, services/activities, contact info, meeting times, board/contacts, membership info, etc.)
-- Hosting/domain: adhd-bornholm.dk — current registrar/host unknown.
+- Full rebuild, styled as a subsidiary of adhd.dk (green/white palette, similar structure).
+- Plain static HTML/CSS — no framework, no build step — so it can be uploaded directly over FTP.
+- Content sourced from ADHD-foreningen's existing public page for the Bornholm chapter (adhd.dk/lokalafdelinger/bornholm): activities, board members, contact details. See "Content source" below.
+- Deploy target: Simply.com FTP hosting the user already has access to (see legacy-site/ note below) — user uploads manually once happy with the result; this repo does not push to FTP automatically.
+
+## Content source
+
+Pulled from ADHD-foreningen's public Bornholm chapter page (https://adhd.dk/lokalafdelinger/bornholm) on 2026-09-16:
+
+- **Activities**: ADHD Café 18+ (2nd Tuesday/month, 16-18, Østerlars Multihus), ADHD UNGE+ (16-30 y/o, 2nd Friday/month, 19-21), ADHD Familie+ (family network café, one Saturday/month, 13-15)
+- **Board**: Selina Munch-Petersen (formand), Cecilie Ramstedt Frølich (næstformand), Marianne Frølich (kasserer), Sophie Bidstrup Ring, Ralf Marcoux Skovgaard
+- **Contact**: bornholm@adhd.dk, 61 45 09 02, Ølenevej 22, 3751 Østermarie
+- **Meeting location**: Østerlars Multihus, Stavsdalvej 30, 3760 Gudhjem
+- **Social**: Instagram @adhdbornholm (Facebook group mentioned on adhd.dk but no confirmed URL found — left off the site rather than guessing)
+
+This should be verified/updated with ADHD Bornholm directly before going live — it was scraped from the parent org's site, not provided first-hand.
 
 ## Open decisions
 
-- [ ] Tech stack (candidates: Next.js, matching the Thomas Sørensen clinic site stack; or a simpler static site given likely modest hosting/budget/maintenance needs)
-- [ ] Who maintains the site long-term (affects CMS vs. static choice)
-- [ ] Content source — real copy, org info, contact details, imagery
-- [ ] Hosting target and deployment approach
-- [ ] Visual identity / branding (logo, colors) — does one exist already?
+- [ ] Real logo/visual identity — site currently uses a text wordmark + adhd.dk-style green palette, no actual logo asset
+- [ ] Confirm/replace Facebook link (couldn't verify a real URL)
+- [ ] Who maintains the site long-term / whether a CMS is worth adding later
+- [ ] Confirm content above is accurate and current with ADHD Bornholm directly
+- [ ] Hosting target for adhd-bornholm.dk — the FTP account provided only serves Simply.com's default splash page (see legacy-site/ note); it's unclear if this FTP account is actually where the live domain's DNS points
 
 ## Findings
 
-- The FTP account (Simply.com hosting) contains only the default provider splash page in both `public_html` and `testing` — no real site files, empty `.htaccess`. This does **not** match the live placeholder page shown at adhd-bornholm.dk ("Her kommer ADHD Bornholms hjemmeside" + cookie banner), so the live content is coming from somewhere else — different DNS target, a separate site-builder/CMS, or a different hosting account. Needs clarifying with whoever manages the domain/hosting before assuming FTP is the deployment path for the rebuild.
+- The FTP account (Simply.com hosting) contains only the default provider splash page in both `public_html` and `testing` — no real site files, empty `.htaccess`. This does **not** match the live placeholder page shown at adhd-bornholm.dk, so it's unconfirmed whether this FTP account is the actual deployment target for the live domain. Worth confirming before the user uploads the finished site.
 
 ## Notes
 
