@@ -18,7 +18,7 @@ The live site (adhd-bornholm.dk) is currently a placeholder with no real content
 Pulled from ADHD-foreningen's public Bornholm chapter page (https://adhd.dk/lokalafdelinger/bornholm) on 2026-09-16:
 
 - **Activities**: ADHD Café 18+ (2nd Tuesday/month, 16-18, Østerlars Multihus), ADHD UNGE+ (16-30 y/o, 2nd Friday/month, 19-21), ADHD Familie+ (family network café, one Saturday/month, 13-15)
-- **Board**: Selina Munch-Petersen (formand), Sophie Bidstrup Ring (næstformand), Marianne Frølich (kasserer), Cecilie Ramstedt Frølich (bestyrelsesmedlem), Julie Zeltner (bestyrelsesmedlem). Updated 2026-09-16 per user — this now differs from adhd.dk's own chapter page, which as of the scrape date still listed Cecilie as næstformand, Sophie as bestyrelsesmedlem, no Julie, and Ralf Marcoux Skovgaard as a board member. Board photos (Selina, Sophie, Marianne, Cecilie) pulled from adhd.dk/lokalafdeling/bornholm/ into `site/assets/board/`; no photo exists yet for Julie.
+- **Board**: Selina Munch-Petersen (formand), Sophie Bidstrup Ring (næstformand), Marianne Frølich (kasserer), Cecilie Ramstedt Frølich (bestyrelsesmedlem), Julie Zeltner (bestyrelsesmedlem). Updated 2026-09-16 per user — this now differs from adhd.dk's own chapter page, which as of the scrape date still listed Cecilie as næstformand, Sophie as bestyrelsesmedlem, no Julie, and Ralf Marcoux Skovgaard as a board member. Board photos (Selina, Sophie, Marianne, Cecilie) pulled from adhd.dk/lokalafdeling/bornholm/ into `site/assets/board/`; Julie's photo was provided directly by the user (2026-09-16). All five board members now have photos.
 - **Contact**: bornholm@adhd.dk, 61 45 09 02, Ølenevej 22, 3751 Østermarie
 - **Meeting location**: Østerlars Multihus, Stavsdalvej 30, 3760 Gudhjem
 - **Social**: Facebook group (facebook.com/groups/350894474982), Instagram @adhdbornholm
@@ -39,7 +39,7 @@ Follows a written content brief from ADHD-foreningen for chapter sites (photogra
 ## Assumptions that need verification before going live
 
 - **Lokale tilbud pricing/signup**: marked all three activities as "Gratis" / "Ikke nødvendig — mød bare op" — this wasn't explicitly confirmed, just inferred from how these community cafés are typically run. Please confirm or correct per activity.
-- **Board bios**: the content brief also asks for a 2-4 line personal bio per board member. I don't have that, so bios are still missing (photos are now in place for everyone except Julie Zeltner) — noted as "coming soon" rather than inventing biographical text about real people.
+- **Board bios**: the content brief also asks for a 2-4 line personal bio per board member. I don't have that yet (photos are now in place for all five) — noted as "coming soon" rather than inventing biographical text about real people.
 - **Arrangementer**: no actual upcoming one-off events were provided, so this page currently shows an empty state pointing to social media instead of fabricated dates.
 - **Kontakt "svartid"**: the brief asks for an approximate response time; I used a generic "we reply when we can, we're volunteers" line rather than inventing a number of days.
 - **Medlem page QR code**: generated via a third-party QR image API (api.qrserver.com) embedded as a plain `<img>` — no JS/library, but it does mean that image depends on an external service being up when the live page loads. The QR is always paired with a normal clickable link per the brief's own guidance.
